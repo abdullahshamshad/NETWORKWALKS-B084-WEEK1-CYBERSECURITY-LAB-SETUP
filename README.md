@@ -43,26 +43,32 @@ This repository contains the lab documentation, execution commands, and task sum
 ### Task 1: Domain Registration Details (`whois`)
 * **Command:** `whois networkwalks.com`
 * **Description:** Retrieved domain registration details, owner info, registrar data, creation/expiry dates, and authoritative name servers.
+* ![Task 1 Result](s1.png)
 
 ### Task 2: Web Technology Fingerprinting (`whatweb`)
 * **Command:** `whatweb networkwalks.com`
 * **Description:** Identified web application tech stacks, server software, CMS details, embedded scripts, and HTTP status codes.
+* ![Task 2 Result](s2.png)
 
 ### Task 3: DNS Resolution (`nslookup`)
 * **Command:** `nslookup networkwalks.com`
 * **Description:** Queried DNS servers to resolve hostnames to their respective IP address mappings.
+* ![Task 3 Result](s3.png)
 
 ### Task 4: HTTP Response Headers Inspection (`curl -I`)
 * **Command:** `curl -I https://networkwalks.com`
 * **Description:** Inspected HTTP response headers to analyze web server configurations and missing security headers.
+* ![Task 4 Result](s4.png)
 
 ### Task 5: Web Application Firewall Detection (`wafw00f`)
 * **Command:** `wafw00f networkwalks.com`
 * **Description:** Fingerprinted target behavior to detect and identify active Web Application Firewalls (WAF).
+* ![Task 5 Result](s5.png)
 
 ### Task 6: DNS Record Enumeration (`dnsrecon`)
 * **Command:** `dnsrecon -d networkwalks.com`
 * **Description:** Enumerated essential DNS resource records (A, AAAA, MX, NS, TXT, SOA) for attack surface mapping.
+* ![Task 6 Result](s6.png)
 
 ---
 
@@ -76,7 +82,10 @@ This repository contains the lab documentation, execution commands, and task sum
 * **Target / Scope:** `192.168.100.0/24` 
 * **Scan Type:** `Ping Scan` (Zenmap)
 * **Description:** Performed ICMP ping sweep across the local network segment to identify active live hosts.
+* ![Step 2 Result](scan1.pdf)
 
 ### Step 3: Network Topology Visualization
 * **Tool:** Zenmap Topology View
 * **Description:** Generated host topology graph showing active nodes, network hops, and structural connectivity.
+* ![Step 3 Result](legend.png)
+  ------------------------------------------------
