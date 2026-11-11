@@ -89,3 +89,22 @@ This repository contains the lab documentation, execution commands, and task sum
 * **Description:** Generated host topology graph showing active nodes, network hops, and structural connectivity.
 * ![Step 3 Result](legend.png)
   ------------------------------------------------
+  ---
+
+## 📑 WK2-PM-FINAL-REPORT: Executive Penetration Testing Report
+
+### Overview
+A formal, comprehensive **Penetration Testing Report** has been written for Week 2 practical activities, summarizing findings from both Footprinting (Module 1) and Subnet Discovery (Module 5).
+
+### 📁 Report Contents & Structure:
+1. **Executive Metadata & Liability Disclaimer:** Authorized scope parameters and legal guidelines.
+2. **Reconnaissance & Footprinting (W2-PM1):** Detailed execution logs of `whois`, `whatweb`, `nslookup`, `curl -I`, `wafw00f`, and `dnsrecon`.
+3. **Network Scanning & Topology (W2-PM5):** Subnet discovery via `ipconfig /all`, active host ping sweep, and MAC/IP mapping via Zenmap.
+4. **Risk Analysis & Impact Matrix:** Technical vulnerability impact assessment (Low to Medium severity findings).
+5. **Remediation & Recommendations:** 9 actionable security recommendations for perimeter defense and internal asset visibility.
+
+---
+
+### 📄 Access Full Report
+- **PDF Version:** `[Penetration_Testing_Report_Week_2.pdf](./Penetration_Testing_Report_Week_2.pdf)` *(Upload your PDF to GitHub and verify file path)*
+- **Google Docs Live Version:** [View Report on Google Docs](https://docs.google.com/document/d/1b0gY63gHRRA4Q6O72badc02b1n_ao8astYTK0H--d-Q/edit)
