@@ -108,3 +108,98 @@ A formal, comprehensive **Penetration Testing Report** has been written for Week
 ### 📄 Access Full Report
 - **PDF Version:** `[Penetration_Testing_Report_Week_2.pdf](./Penetration_Testing_Report_Week_2.pdf)` *(Upload your PDF to GitHub and verify file path)*
 - **Google Docs Live Version:** [View Report on Google Docs](https://docs.google.com/document/d/1b0gY63gHRRA4Q6O72badc02b1n_ao8astYTK0H--d-Q/edit)
+- ---------------------------------------------------------------------------------------------------------------------------
+
+# Week 03: Password Cracking & Hash Analysis
+
+**Internship:** Networkwalks Academy — Cybersecurity Internship  
+**Focus Areas:** PDF Hash Extraction, Offline Dictionary Attacks (Johnny GUI), Online Hash Auditing, Flag Capture  
+
+---
+
+## Overview
+
+During Week 3 of the cybersecurity internship, I audited and recovered passwords from four encrypted PDF documents (`$pdf$4*4*128*` format) using both a graphical password-cracking suite (**Johnny — John the Ripper GUI**) on Windows and browser-based security utilities (**Networkwalks Tools**):
+
+1. **W3-PM1:** Password Cracking with **John the Ripper (Johnny GUI)**
+2. **W3-PM2:** Password Cracking with **Networkwalks (NW) Tools**
+
+---
+
+## Tools & Environment
+
+* **Operating System:** Windows 11
+* **Offline Cracking Suite:** Johnny (GUI frontend for John the Ripper)
+* **Online Auditing Utility:** Networkwalks (NW) Hashes & Password Cracking Tools
+* **Target Files:**
+  * `My Locked PDF1.pdf` (W3-PM1)
+  * `My Locked PDF2.pdf` (W3-PM1)
+  * `My Locked PDF3.pdf` (W3-PM1)
+  * `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf` (W3-PM2)
+
+---
+
+## Task Breakdown & Methodology
+
+### 1. W3-PM1: Password Cracking with Johnny (JTR GUI)
+
+**Objective:** Extract cryptographic hashes from three locked PDF files (`My Locked PDF1.pdf`, `My Locked PDF2.pdf`, and `My Locked PDF3.pdf`), recover their plaintext passwords using Johnny GUI, and unlock each document to capture the embedded flags.
+
+**Workflow Executed:**
+1. Extracted password hashes from the three target PDF documents (`hash1.txt`, `hash2.txt`, and `hash3.txt`).
+2. Loaded each hash file into **Johnny (John the Ripper GUI)** via **Open password file** and executed **Start new attack**.
+3. Achieved `100% (1/1: 1 cracked, 0 left)` across all three targets, recovering `good-luck`, `password1`, and `1qaz2wsx`.
+4. Unlocked all three PDFs using the recovered passwords to verify access and retrieve their flags.
+
+**Proof of Execution — Johnny GUI Cracking Results:**
+* **`My Locked PDF1.pdf` (`good-luck`):**
+  ![Johnny GUI Crack PDF 1](screenshots/johnny-pdf1.png)
+* **`My Locked PDF2.pdf` (`password1`):**
+  ![Johnny GUI Crack PDF 2](screenshots/johnny-pdf2.png)
+* **`My Locked PDF3.pdf` (`1qaz2wsx`):**
+  ![Johnny GUI Crack PDF 3](screenshots/johnny-pdf3.png)
+
+**Proof of Execution — Unlocked PDFs & Captured Flags:**
+* **Flag 1 (`My Locked PDF1.pdf`):**
+  ![W3-PM1 Flag 1](screenshots/flag-pdf1.png)
+* **Flag 2 (`My Locked PDF2.pdf`):**
+  ![W3-PM1 Flag 2](screenshots/flag-pdf2.png)
+* **Flag 3 (`My Locked PDF3.pdf`):**
+  ![W3-PM1 Flag 3](screenshots/flag-pdf3.png)
+
+---
+
+### 2. W3-PM2: Password Cracking with Networkwalks (NW) Tools
+
+**Objective:** Recover the password of `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf` using Networkwalks' dedicated online password/hash cracking utility and cross-verify previous results.
+
+**Workflow Executed:**
+1. Opened the **Networkwalks Hashes & Password Cracking Tools** portal and submitted `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`.
+2. Executed the dictionary audit, which matched and recovered the password **`password1`**.
+3. Unlocked `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf` using `password1` and retrieved the final flag.
+4. Cross-checked the three PDFs from W3-PM1 against NW Tools as well, confirming identical password recovery results across both offline and online utilities.
+
+**Proof of Execution — Networkwalks Tools & Captured Flag:**
+* **NW Tools Password Recovery (`password1`):**
+  ![W3-PM2 NW Tools Cracking](screenshots/NW-TOOLS.png)
+* **Unlocked PDF & Captured Flag (`My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`):**
+  ![W3-PM2 Flag Captured](screenshots/PDF1-NW-TOOLS.png)
+
+---
+
+## Summary of Recovered Passwords & Flags
+
+| Task ID | Target PDF File | Tool Used | Recovered Password | Captured Flag | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **W3-PM1** | `My Locked PDF1.pdf` | Johnny (JTR GUI) | `good-luck` | `nw{cybersecurity_flag_captured_2608}` | Verified |
+| **W3-PM1** | `My Locked PDF2.pdf` | Johnny (JTR GUI) | `password1` | `nw{networkwalks_persistence_jtr_270521}` | Verified |
+| **W3-PM1** | `My Locked PDF3.pdf` | Johnny (JTR GUI) | `1qaz2wsx` | `nw{networkwalks_flag_250821_1}` | Verified |
+| **W3-PM2** | `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf` | Networkwalks Tools | `password1` | `nw{networkwalks_flag1_jtr_270521_1}` | Verified |
+
+---
+
+## Key Security Takeaways
+
+* **Predictable Password Patterns:** Common dictionary words (`password1`, `good-luck`) and keyboard-walk sequences (`1qaz2wsx`) are cracked within seconds once a document's hash is extracted.
+* **Defense-in-Depth:** Organizations should enforce strong passphrase policies (14+ random characters) on sensitive PDFs and avoid reusing predictable patterns across internal documents.
+
