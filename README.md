@@ -153,7 +153,7 @@ During Week 3 of the cybersecurity internship, I audited and recovered passwords
 
 **Proof of Execution — Johnny GUI Cracking Results:**
 * **`My Locked PDF1.pdf` (`good-luck`):**
-  ![Johnny GUI Crack PDF 1](screenshots/johnny-pdf1.png)
+  ![Johnny GUI Crack PDF 1](johnny-pdf1.png)
 * **`My Locked PDF2.pdf` (`password1`):**
   ![Johnny GUI Crack PDF 2](screenshots/johnny-pdf2.png)
 * **`My Locked PDF3.pdf` (`1qaz2wsx`):**
