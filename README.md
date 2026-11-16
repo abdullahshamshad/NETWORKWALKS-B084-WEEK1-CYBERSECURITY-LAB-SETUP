@@ -155,17 +155,17 @@ During Week 3 of the cybersecurity internship, I audited and recovered passwords
 * **`My Locked PDF1.pdf` (`good-luck`):**
   ![Johnny GUI Crack PDF 1](johnny-pdf1.png)
 * **`My Locked PDF2.pdf` (`password1`):**
-  ![Johnny GUI Crack PDF 2](screenshots/johnny-pdf2.png)
+  ![Johnny GUI Crack PDF 2](johnny-pdf2.png)
 * **`My Locked PDF3.pdf` (`1qaz2wsx`):**
-  ![Johnny GUI Crack PDF 3](screenshots/johnny-pdf3.png)
+  ![Johnny GUI Crack PDF 3](johnny-pdf3.png)
 
 **Proof of Execution — Unlocked PDFs & Captured Flags:**
 * **Flag 1 (`My Locked PDF1.pdf`):**
-  ![W3-PM1 Flag 1](screenshots/flag-pdf1.png)
+  ![W3-PM1 Flag 1](flag-pdf1.png)
 * **Flag 2 (`My Locked PDF2.pdf`):**
-  ![W3-PM1 Flag 2](screenshots/flag-pdf2.png)
+  ![W3-PM1 Flag 2](flag-pdf2.png)
 * **Flag 3 (`My Locked PDF3.pdf`):**
-  ![W3-PM1 Flag 3](screenshots/flag-pdf3.png)
+  ![W3-PM1 Flag 3](flag-pdf3.png)
 
 ---
 
@@ -181,9 +181,9 @@ During Week 3 of the cybersecurity internship, I audited and recovered passwords
 
 **Proof of Execution — Networkwalks Tools & Captured Flag:**
 * **NW Tools Password Recovery (`password1`):**
-  ![W3-PM2 NW Tools Cracking](screenshots/NW-TOOLS.png)
+  ![W3-PM2 NW Tools Cracking](NW-TOOLS.png)
 * **Unlocked PDF & Captured Flag (`My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`):**
-  ![W3-PM2 Flag Captured](screenshots/PDF1-NW-TOOLS.png)
+  ![W3-PM2 Flag Captured](PDF1-NW-TOOLS.png)
 
 ---
 
